@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order with Cart</title>
+    <script src="customerScript.js" defer></script>
+</head>
+<body>
+    <center>
+        <h1>Place Your Food Order</h1>
+
+        <!-- Main Dishes Section -->
+        <div>
+            <h2>Main Dishes</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Pizza" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Pizza" data-price="10">Add Pizza ($10)</button></center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Burger" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Burger" data-price="8">Add Burger ($8)</button></center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Side Dishes / Snacks Section -->
+        <div>
+            <h2>Side Dishes / Snacks</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Fries" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Fries" data-price="4">Add Fries ($4)</button></center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Salad" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Salad" data-price="5">Add Salad ($5)</button></center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Nachos" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Nachos" data-price="6">Add Nachos ($6)</button></center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Drinks Section -->
+        <div>
+            <h2>Drinks</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Soda" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Soda" data-price="2">Add Soda ($2)</button></center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Juice" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Juice" data-price="3">Add Juice ($3)</button></center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://via.placeholder.com/150" alt="Water" />
+                            <br />
+                            <center><button class="addToCartButton" data-food="Water" data-price="1">Add Water ($1)</button></center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Cart Section -->
+        <div>
+            <h2>Your Cart</h2>
+            <ul id="cartList">
+                <!-- Cart items will appear here -->
+            </ul>
+            <p>Total: $<span id="totalPrice">0</span></p>
+            <button id="checkoutButton">Checkout</button>
+        </div>
+
+        <!-- Checkout Popup -->
+        <div id="checkoutPopup" style="display:none;">
+            <h2>Checkout Summary</h2>
+            <ul id="checkoutSummary">
+                <!-- Checkout summary will appear here -->
+            </ul>
+            <p>Total: $<span id="checkoutTotalPrice">0</span></p>
+            <button id="confirmCheckout">Confirm Order</button>
+            <button id="cancelCheckout">Cancel</button>
+        </div>
+    </center>
+</body>
+</html>
